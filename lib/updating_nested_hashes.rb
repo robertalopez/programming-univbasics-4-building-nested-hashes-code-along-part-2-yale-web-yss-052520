@@ -22,11 +22,11 @@ def update_status
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
+epic_tragedy[:montague][:hero][:status] = "dead"
+epic_tragedy[:capulet][:heroine][:status] = "dead"
 
 
-
-
-  # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
+ # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
   epic_tragedy
 end
 
@@ -60,8 +60,11 @@ def add_characters
    #   - The second hash should have the :name key set to "Apothecary" 
    # Code your solution here:
 
-
-
+epic_tragedy[:additional_characters] = []
+prince = {name: "Prince Escalus"}
+apothecary = {name: "Apothecary"}
+epic_tragedy[:additional_characters] << prince
+epic_tragedy[:additional_characters] << apothecary 
 
 
 
